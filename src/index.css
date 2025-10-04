@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBxEMdeKf2n5yGxzljAY1ACfjzAfULc6Txg&s");
+ background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  margin: 0; 
+  height: 100vh; 
+  font-family:'monospace', sans-serif;
+
+}
+
+.app{
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+main{
+  min-height: 100vh;
+  padding: 25px;
+
+}
+.search-box{
+  width:100%;
+  margin:0 auto 75px;
+
+}
+.search-box .search-bar{
+  display:block;
+  width: 100%;
+  transition:0.4 ease;
+
+}
+.search-box .search-bar:focus{
+background-color: rgba(255,255,255,0.75);
+}
+.location-box .location{
+  color:white;
+  font-size: 28px;
+  font-weight:500;
+  text-align: center;
+  text-shadow:3px 3px rgba(125, 116, 116, 0.6);
+}
+.location-box .date{
+  color:white;
+  font-size:21px;
+  font-weight:300;
+  font-style:italic;
+  text-align:center;
+}
+.weather-box{
+text-align:center;
+
+}
+.weather-box .temp{
+  position:relative;
+  display:inline-block;
+margin:30px auto;
+background-color: rgba(255,255,255,0.4);
+border-radius: 16px;
+padding:20px;
+color:white;
+font-size:  70px;;
+font-weight:900;
+text-align:center;
+box-shadow: 3px ;
+ text-shadow: 3px 6px rgba(125, 116, 116, 0.6);
+}
+
+.weather-box .weather{
+  color:white;
+  font-size: 32px;
+  font-weight: 600;
+  text-align:center;
+  text-shadow: 2px 1px rgba(125, 116, 116, 0.6);
+
 }
